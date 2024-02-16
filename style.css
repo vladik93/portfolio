@@ -1,0 +1,65 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  min-height: 100vh;
+}
+
+/*  */
+
+/* HEADER */
+
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+
+
+}
+
+.logo-icon {
+  max-width: 100%;
+  width: 100px;
+  border-left: 10px solid #333;
+  border-top: 10px solid #333;
+  border-top-left-radius: 15px;
+
+}
+
+/*  */
+
+/* SOCIALS */
+
+.social-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 1.6rem;
+  gap: 2.4rem;
+  
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.social#github {
+  fill: red;
+}
+
+/*  */
