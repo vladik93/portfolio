@@ -16,8 +16,28 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   min-height: 100vh;
+  background-color: #333;
+  color: rgba(230, 230, 230, 0.8);
 }
 
+h1 {
+  font-size: 3.4rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
 /*  */
 
 /* HEADER */
@@ -33,9 +53,9 @@ body {
 .logo-icon {
   max-width: 100%;
   width: 100px;
-  border-left: 10px solid #333;
-  border-top: 10px solid #333;
-  border-top-left-radius: 15px;
+  border-left: 10px solid #E95793;
+  border-top: 10px solid #E95793;
+  border-top-left-radius: 12px;
 
 }
 
@@ -53,13 +73,91 @@ body {
 }
 
 .social {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in, fill 0.1s ease-in;
+  fill: #999999;
+}
+
+.social {
+
+
+}
+
+.social:hover {
+  fill: #fff;
+  transform: scale(1);
+}
+
+/*  */
+
+/* SECTIONS */
+
+section {
+  padding: 2.4rem 1.6rem;
+}
+
+/*  */
+
+/* HERO */
+.hero-title {
+  padding-bottom: 4rem;
+}
+
+.hero-text {
+  padding: 0 2.4rem;
+  border-left: 5px solid #E95793;
   
 }
 
-.social#github {
-  fill: red;
+/*  */
+
+/* PROJECT */
+
+.project-title {
+  padding-bottom: 2.4rem;
 }
+
+.project-wrapper {
+  padding: 2.4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.project-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  display: block;
+  height: 5px;
+  background-color: #E95793;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+}
+
+.project-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  display: block;
+  height: 50px;
+  background-color: #E95793;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  
+}
+
+.project {
+  padding-bottom: 0.8rem;
+  /* border-bottom: 1px solid #E95793; */
+  display: flex;
+  justify-content: flex-start;
+}
+
 
 /*  */
